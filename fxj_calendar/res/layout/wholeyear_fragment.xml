@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fullyear_frag"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+   
+    
+    <fxj.calendar.year.YearListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="false" />
+    
+    <!-- AbsListView -->
+    <!-- android:drawSelectorOnTop:When set to true, the selector will be drawn over the selected item.  -->
+
+</LinearLayout>

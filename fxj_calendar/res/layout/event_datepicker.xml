@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+            style="@style/add_event_divider"
+            android:layout_marginLeft="10dp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        
+        
+        <fxj.calendar.datepicker.WheelView
+            android:id="@+id/year_datepicker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <fxj.calendar.datepicker.WheelView
+            android:id="@+id/month_datepicker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <fxj.calendar.datepicker.WheelView
+            android:id="@+id/day_datepicker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+        <fxj.calendar.datepicker.WheelView
+            android:id="@+id/hour_datepicker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+        <fxj.calendar.datepicker.WheelView
+            android:id="@+id/minute_datepicker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+                
+    </LinearLayout>
+
+  
+
+</LinearLayout>

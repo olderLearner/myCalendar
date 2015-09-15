@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/switch_action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/red_search"
+        android:showAsAction="never"
+        android:title="Search">
+    </item>
+
+    <!--
+    <item
+        android:id="@+id/month_search"
+        android:orderInCategory="60"
+        android:icon="@drawable/red_search"
+        android:showAsAction="ifRoom"
+        android:title="switch">
+    </item>
+  
+	<item
+        android:id="@+id/switch_change_view"
+        android:orderInCategory="70"
+        android:showAsAction="ifRoom"
+        android:title="切换">
+    </item>
+    -->
+
+    <item
+        android:id="@+id/switch_select_day"
+        android:orderInCategory="75"
+        android:showAsAction="never"
+        android:title="选择">
+    </item>
+    <item
+        android:id="@+id/delete_database"
+        android:orderInCategory="80"
+        android:showAsAction="never"
+        android:title="delete database">
+    </item>
+     <item
+        android:id="@+id/city_selector"
+        android:orderInCategory="80"
+        android:showAsAction="never"
+        android:title="city_selector">
+    </item>
+    
+
+</menu>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fxj.calendar"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <!-- android:uiOptions="splitActionBarWhenNarrow" -->
+    <application
+        android:name="fxj.calendar.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/a02"
+        android:label="@string/app_name" >
+        <receiver
+            android:name="fxj.calendar.CallAlarm"
+            android:process=":remote" />
+
+        <activity
+            android:name="fxj.calendar.MonthActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fxj.calendar.Record"
+            android:label="@string/recordremind_name" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fxj.calendar.AllRecord"
+            android:label="@string/recordremind_name" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fxj.calendar.RemindSetting"
+            android:label="@string/remindsetting_name" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fxj.calendar.AlarmAlert"
+            android:label="@string/remindsetting_name" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fxj.calendar.About"
+            android:label="@string/about" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fxj.calendar.year.WholeYearActivity"
+            android:theme="@style/AppBaseTheme" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="fxj.calendar.lunar.LunarMonthActivity"
+            android:theme="@style/AppBaseTheme"  >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fxj.calendar.AddEventActivity"
+            android:theme="@style/add_event_activity_theme"  >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fxj.calendar.EventDetailActivity"
+            android:theme="@style/AppBaseTheme"  >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="fxj.calendar.EventRepeatActivity"
+            android:parentActivityName="fxj.calendar.AddEventActivity"
+            android:theme="@style/AppBaseTheme"  >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fxj.calendar.EventRemindActivity"
+            android:parentActivityName="fxj.calendar.AddEventActivity"
+            android:theme="@style/AppBaseTheme"  >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fxj.calendar.EventDisplayStateActivity"
+            android:parentActivityName="fxj.calendar.AddEventActivity"
+            android:theme="@style/AppBaseTheme"  >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="fxj.calendar.DatePickerActivity"
+            
+            android:label="@string/datepicker_title"
+            android:theme="@style/datepicker_theme" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="fxj.weather.CityPickerActivity"
+            android:label="city"
+            android:theme="@style/datepicker_theme" >
+            >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        
+        
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>
